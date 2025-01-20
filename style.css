@@ -21,11 +21,14 @@ nav ul{
     display: flex;
     gap: 32px;
 }
-nav h3{
-    font-size: 2rem;
-    font-weight: bold;
+.logo{
     display: flex;
     align-items: center;
+}
+.logo h3{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 10px;
 }
 nav li{
     font-size: 1.25rem;
@@ -43,6 +46,10 @@ nav li{
 .purple{
     color: #5D58EF;
 }
+.menu{
+    font-size: 30px;
+    display: none;
+}
 /* common style */
 .btn{
     font-size: 1.25rem;
@@ -52,4 +59,138 @@ nav li{
     padding: 10px 60px;
     border-radius: 12px;
     border: none;
+}
+.common-des{
+    padding: 24px 0;
+    font-size: 20px;
+}
+section{
+    margin: 60px 0 ;
+}
+.heading{
+    font-size: 2.87rem;
+    text-align: center;
+}
+/* banner */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-tittle{
+    max-width: 640px;
+}
+.banner-tittle h2{
+    font-size: 3.5rem;
+}
+.banner-photo img{
+    width: 100%;
+}
+.black{
+    background-color: black;
+}
+/* main */
+main{
+    max-width: 1160px;
+    margin: 0 auto;
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+/* section1 */
+.main-card{
+    padding: 80px 0;
+    display: flex;
+    gap: 28px;
+}
+.card{
+    text-align: center;
+    width: 367px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    border-radius: 18px;
+}
+.card h5{
+    font-size: 2rem;
+    padding-top: 25px;
+}
+.card span{
+    font-weight: bold;
+    cursor: pointer;
+}
+.card1{
+    background: linear-gradient(180deg,#DEF5FF, white 30%);
+    border: 1px solid #DEF5FF;
+}
+.card2{
+    background: linear-gradient(180deg,#FFF4DC, white 30%);
+    border: 1px solid #FFF4DC;
+}
+.card3{
+    background: linear-gradient(180deg,#F2E8FF, white 30%);
+    border: 1px solid #F2E8FF;
+}
+.main-arrow{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+@media (max-width: 576px) {
+    /* header */
+    .banner{
+        padding: 0 15px;
+    }
+    .menu{
+        display: block;
+    }
+    nav{
+        border-bottom: 1px solid orange;
+        padding: 15px;
+    }
+    .logo h3{
+        display: none;
+    }
+    nav ul{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .banner-tittle{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .banner-tittle h2{
+        font-size: 2rem;
+    }
+    /* main */
+    main{
+        padding: 0 15px;
+    }
+    .main-card{
+        flex-wrap: wrap;
+        padding: 20px 0;
+    }
+    .main-arrow{
+        display: none;
+    }
+    .heading{
+        font-size: 2rem;
+    }
 }
