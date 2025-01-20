@@ -64,9 +64,6 @@ nav li{
     padding: 24px 0;
     font-size: 20px;
 }
-section{
-    margin: 60px 0 ;
-}
 .heading{
     font-size: 2.87rem;
     text-align: center;
@@ -91,13 +88,16 @@ section{
 }
 /* main */
 main{
-    max-width: 1160px;
-    margin: 0 auto;
+    background: linear-gradient(to top, #fea10134 0%, white 50%);
+}
+/* section1 */
+.section1{
     background-image: url(assets/bg.png);
+    max-width: 1160px;
+    margin: 60px auto;
     background-size: cover;
     background-position: center;
 }
-/* section1 */
 .main-card{
     padding: 80px 0;
     display: flex;
@@ -148,6 +148,81 @@ main{
     font-weight: bold;
     cursor: pointer;
 }
+/* section2 */
+.section2{
+    background-image: url(assets/bg.png);
+    max-width: 1160px;
+    margin: 60px auto;
+    background-size: cover;
+    background-position: center;
+}
+.photos{
+    padding: 80px 0;
+    display: flex;
+    gap: 18px;
+}
+.big-photo{
+    border-radius: 24px;
+    width: 540px;
+    background-color: white;
+}
+.big-photo img{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.photo-tittle{
+    position: relative;
+    padding: 38px 34px;
+}
+.date{
+    padding: 15px 20px;
+    background-color: #3CD8E8;
+    width: max-content;
+    border-radius: 47px;
+    top: -25px;
+    position: absolute;
+    font-weight: 500;
+    color: white;
+}
+.photos h4{
+    font-size: 2rem;
+    padding-top: 30px;
+}
+.small-photos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.small-photos img{
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    width: 100%;
+}
+.pic{
+    border-radius: 24px;
+    background-color: white;
+}
+.pic-tittle{
+    position: relative;
+    padding: 33px 38px;
+}
+.pic-tittle h6{
+    font-size: 1.1rem;
+    padding-top: 20px;
+}
+.year{
+    background-color: #95B226;
+    position: absolute;
+    padding: 15px 20px;
+    top: -25px;
+    width: max-content;
+    border-radius: 47px;
+    font-weight: 500;
+    color: white;
+}
+.year2{
+    background-color: #5D58EF;
+}
 @media (max-width: 576px) {
     /* header */
     .banner{
@@ -192,5 +267,40 @@ main{
     }
     .heading{
         font-size: 2rem;
+    }
+    /* section2 */
+    .photos{
+        padding-top: 20px;
+    }
+    .big-photo{
+        display: none;
+    }
+    .small-photos{
+        gap: 10px;
+    }
+    .year{
+        position: absolute;
+        padding: 5px 10px;
+        top: -15px;
+        width: max-content;
+        border-radius: 47px;
+        font-weight: 500;
+        color: white;
+        font-size: 10px;
+    }
+    .pic{
+        border-radius: 9px;
+    }
+    .pic-tittle{
+        padding: 19px 20px;
+    }
+    .pic-tittle h6{
+        font-size: 15px;
+        padding-top: 0;
+    }
+    .small-photos img{
+        border-top-left-radius: 9px;
+        border-top-right-radius: 9px;
+        width: 100%;
     }
 }
