@@ -24,6 +24,7 @@ nav ul{
 .logo{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .logo h3{
     font-size: 2rem;
@@ -59,6 +60,7 @@ nav li{
     padding: 10px 60px;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 .common-des{
     padding: 24px 0;
@@ -88,15 +90,13 @@ nav li{
 }
 /* main */
 main{
-    background: linear-gradient(to top, #fea10134 0%, white 50%);
+    background: linear-gradient(to top, rgba(254, 163, 1, 0.3) , white 50%);
 }
 /* section1 */
 .section1{
     background-image: url(assets/bg.png);
     max-width: 1160px;
     margin: 60px auto;
-    background-size: cover;
-    background-position: center;
 }
 .main-card{
     padding: 80px 0;
@@ -153,8 +153,8 @@ main{
     background-image: url(assets/bg.png);
     max-width: 1160px;
     margin: 60px auto;
-    background-size: cover;
-    background-position: center;
+    margin-bottom: 0;
+    padding-bottom: 60px;
 }
 .photos{
     padding: 80px 0;
@@ -223,6 +223,34 @@ main{
 .year2{
     background-color: #5D58EF;
 }
+.view{
+    text-align: center;
+}
+/* footer */
+footer{
+    background-color: #01ACFD;
+    color: white;
+}
+.footer{
+    max-width: 1070px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 125px 0;
+}
+.footer-tittle{
+    width: 400px;
+}
+.footer h5{
+    padding-bottom: 32px;
+    font-size: 1.5rem;
+}
+.footer-nav li{
+    padding-bottom: 20px;
+}
+.footer-nav li a{
+    color: white;
+}
 @media (max-width: 576px) {
     /* header */
     .banner{
@@ -279,13 +307,8 @@ main{
         gap: 10px;
     }
     .year{
-        position: absolute;
         padding: 5px 10px;
         top: -15px;
-        width: max-content;
-        border-radius: 47px;
-        font-weight: 500;
-        color: white;
         font-size: 10px;
     }
     .pic{
