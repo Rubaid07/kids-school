@@ -61,6 +61,10 @@ nav li{
     border-radius: 12px;
     border: none;
     cursor: pointer;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    background-color: chocolate;
 }
 .common-des{
     padding: 24px 0;
@@ -87,6 +91,13 @@ nav li{
 }
 .black{
     background-color: black;
+}
+.black:hover{
+    background-color: rgb(88, 76, 76);
+}
+marquee{
+    margin-top: 50px;
+    font-size: 1.5rem;
 }
 /* main */
 main{
@@ -204,7 +215,7 @@ main{
 }
 .pic-tittle{
     position: relative;
-    padding: 33px 38px;
+    padding: 33px 25px;
 }
 .pic-tittle h6{
     font-size: 1.1rem;
@@ -231,6 +242,11 @@ footer{
     background-color: #01ACFD;
     color: white;
 }
+.logo h4{
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 10px;
+}
 .footer{
     max-width: 1070px;
     margin: 0 auto;
@@ -239,7 +255,11 @@ footer{
     padding: 125px 0;
 }
 .footer-tittle{
-    width: 400px;
+    max-width: 400px;
+}
+.footer-des{
+    font-size: 1.25rem;
+    padding-top: 35px;
 }
 .footer h5{
     padding-bottom: 32px;
@@ -251,7 +271,7 @@ footer{
 .footer-nav li a{
     color: white;
 }
-@media (max-width: 576px) {
+@media (max-width: 786px) {
     /* header */
     .banner{
         padding: 0 15px;
@@ -296,6 +316,9 @@ footer{
     .heading{
         font-size: 2rem;
     }
+    .card{
+        width: 100%;
+    }
     /* section2 */
     .photos{
         padding-top: 20px;
@@ -305,6 +328,7 @@ footer{
     }
     .small-photos{
         gap: 10px;
+        width: 100%;
     }
     .year{
         padding: 5px 10px;
@@ -325,5 +349,22 @@ footer{
         border-top-left-radius: 9px;
         border-top-right-radius: 9px;
         width: 100%;
+    }
+    /* footer */
+    .footer{
+        flex-direction: column;
+        padding: 60px 15px;
+        flex-wrap: wrap;
+    }
+    .footer h5{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .footer-des{
+        font-size: 1rem;
+        padding: 22px 0;
+    }
+    .logo h4{
+        font-size: 1.5rem;
     }
 }
